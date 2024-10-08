@@ -10,22 +10,38 @@
 **QUERY SECTION:**<br>
 ;; Query time: 97 msec<br>
 
-**ANSWER SECTION:**<br>
-
 **AUTHORITY SECTION:**<br>
 ;; AUTHORITY SECTION:<br>
 org.                    1800    IN      SOA     a0.org.afilias-nst.info.<br> 
 hostmaster.donuts.email. 1728413625 7200 900 1209600 3600<br>
 
 **2º Realiza consutas dos seguintes nomes e identifica as diferencias: moodle.danielcastelao.org, www.danielcastelao.org**<br>
+Estas son as unicas diferenzas que encontrei.<br><br>
 
+moodle.danielcastela.org<br>
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 21890<br>
+;; MSG SIZE  rcvd: 135<br>
+
+www.danielcastela.org<br>
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 19831<br>
+;; MSG SIZE  rcvd: 132<br>
 
 **3º Averigua o nome e IP dos servidores de DNS autoritativos de www.danielcastelao.org, por qué soen ser 2 servidores autoritativos?**<br>
-
+Co comando `dig ns www.danielcastelao.org`podemos ver os nombres dns<br>
+ns1.hover.com. dnsmaster.hover.com.<br>
 
 **4º Realiza as consultas de nomes inversas: 130.206.164.68 e de outras dúas IPs que se che ocorran.**<br>
-
-
+Para realizar as consultas de maneira inversa temos que añadir o parámetro `-x`ao comando anterior `dig -x www.danielcastelao.org`.<br>
+**IP 130.206.164.68**<br>
+;; ANSWER SECTION:<br>
+68.164.206.130.in-addr.arpa. 7200 IN    PTR     pluto.tlm.unavarra.es.<br>
+68.164.206.130.in-addr.arpa. 7200 IN    PTR     s164m68.unavarra.es.<br>
+**IP 8.8.8.8**<br>
+;; ANSWER SECTION:<br>
+8.8.8.8.in-addr.arpa.   474     IN      PTR     dns.google.<br>
+**IP 130.206.164.2**<br>
+;; ANSWER SECTION:<br>
+2.164.206.130.in-addr.arpa. 7200 IN     PTR     s164m2.unavarra.es.<br>
 **5º A qué servidor DNS estás consultando? Cómo o podes cambiar sen tocar os ficheiros de configuración do sistema?**<br>
 
 
