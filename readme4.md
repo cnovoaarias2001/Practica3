@@ -42,8 +42,10 @@ Para realizar as consultas de maneira inversa temos que añadir o parámetro `-x
 **IP 130.206.164.2**<br>
 ;; ANSWER SECTION:<br>
 2.164.206.130.in-addr.arpa. 7200 IN     PTR     s164m2.unavarra.es.<br><br>
-**5º A qué servidor DNS estás consultando? Cómo o podes cambiar sen tocar os ficheiros de configuración do sistema?**<br>
 
+**5º A qué servidor DNS estás consultando? Cómo o podes cambiar sen tocar os ficheiros de configuración do sistema?**<br>
+Co comando `cat /etc/resolv.conf` poderiamos ver que o DNS co que estamos consultando.<br>
+Para poder cambiar o DNS o podemos facer con `@` antes do comando `dig` e seguido da IP do DNS que queremos consultar: `dig @8.8.8.8 danielcastelao.org`. <br>
 
 **6º Obtén o rexistro SOA (Start of Authority) do dominio  moodle.danielcastelao.org preguntándolle ó servidor DNS de google e logo preoguntándollo directamente ó servidor primario do dominio danielcastelao.org.**<br>
 
