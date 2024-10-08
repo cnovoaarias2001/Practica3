@@ -18,11 +18,11 @@ hostmaster.donuts.email. 1728413625 7200 900 1209600 3600<br>
 **2º Realiza consutas dos seguintes nomes e identifica as diferencias: moodle.danielcastelao.org, www.danielcastelao.org**<br>
 Estas son as unicas diferenzas que encontrei.<br>
 
-moodle.danielcastela.org<br>
+**moodle.danielcastela.org**<br>
 ;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 21890<br>
 ;; MSG SIZE  rcvd: 135<br>
 
-www.danielcastela.org<br>
+**www.danielcastela.org**<br>
 ;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 19831<br>
 ;; MSG SIZE  rcvd: 132<br>
 
@@ -31,7 +31,7 @@ Co comando `dig ns www.danielcastelao.org`podemos ver os nombres dns<br>
 ns1.hover.com. dnsmaster.hover.com.<br>
 
 **4º Realiza as consultas de nomes inversas: 130.206.164.68 e de outras dúas IPs que se che ocorran.**<br>
-Para realizar as consultas de maneira inversa temos que añadir o parámetro `-x`ao comando anterior `dig -x www.danielcastelao.org`.<br>
+Para realizar as consultas de maneira inversa temos que añadir o parámetro `-x`ao comando anterior `dig -x www.danielcastelao.org`.<br><br>
 **IP 130.206.164.68**<br>
 ;; ANSWER SECTION:<br>
 68.164.206.130.in-addr.arpa. 7200 IN    PTR     pluto.tlm.unavarra.es.<br>
